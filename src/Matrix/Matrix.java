@@ -1,16 +1,21 @@
-package Matrix;/*
- * File : Operation.java
+/*
+ * File : Matrix.java
  * Data : 17.10.2023
  * Goal : Class to encapsulate a matrice
  * Authors : Rodrigo Lopes dos Santos, Urs Behrmann
  */
 
+package Matrix;
+
 public class Matrix {
     private int[][] matrix;
+    private int modulo;
 
     // Constructor
     public Matrix(int height, int width, int modulo) {
         this.matrix = new int[height][width];
+        this.modulo = modulo;
+
         java.util.Random random = new java.util.Random();
         for(int[] i : matrix){
             for(int j : i){
@@ -19,8 +24,14 @@ public class Matrix {
         }
     }
 
-    public Matrix(int[][] matrix) {
+    public Matrix(int[][] matrix, int modulo) {
         this.matrix = matrix;
+        for (int[] i : matrix){
+            for (int j : i){
+                j = Math.floorMod(j, modulo);
+            }
+        }
+        this.modulo = modulo;
     }
 
     /*
@@ -29,6 +40,13 @@ public class Matrix {
      */
     public int[][] getMatrix() {
         return matrix;
+    }
+
+    /*
+     * Getter of the modulo
+     */
+    public int getModulo() {
+        return modulo;
     }
 
     /*

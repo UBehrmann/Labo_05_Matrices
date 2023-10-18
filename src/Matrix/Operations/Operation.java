@@ -10,25 +10,25 @@ package Matrix.Operations;
 import Matrix.Matrix;
 
 public abstract class Operation {
-    public Matrix doOperation( Matrix a, Matrix b, int modulo) throws Exception {
+    public Matrix doOperation( Matrix a, Matrix b) {
 
-        // Height and width of the two matrix aren't the same
+        // Matrix are empty
         if(a == null || b == null ){
-            throw new Exception("At least one matrix is empty.");
+            throw new IllegalArgumentException("At least one matrix is empty.");
         }
 
-        if(modulo <= 0){
-            throw new Exception("Modulo must be greater than 0.");
+        if(a.getModulo() != b.getModulo()){
+            throw new IllegalArgumentException("Modulos are not the same.");
         }
 
         int cHeight = Math.max(a.getSizeHeight(), b.getSizeHeight());
         int cWidth = Math.max(a.getSizeWidth(), b.getSizeWidth());
 
-        Matrix c = new Matrix(new int[cHeight][cWidth]);
+        Matrix c = new Matrix(new int[cHeight][cWidth], a.getModulo());
 
         for(int row = 0; row < cHeight; row++){
             for (int column = 0; column < cWidth; column++){
-                c.setMatrixAt(row, column, Math.floorMod(operation(a.getMatrixAt(row, column), b.getMatrixAt(row, column)), modulo));
+                c.setMatrixAt(row, column, Math.floorMod(operation(a.getMatrixAt(row, column), b.getMatrixAt(row, column)), a.getModulo()));
             }
         }
 
