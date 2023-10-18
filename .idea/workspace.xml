@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48de82a3-71cb-4f02-8312-01cba0bbe888" name="Changes" comment="unit tests for main">
+    <list default="true" id="48de82a3-71cb-4f02-8312-01cba0bbe888" name="Changes" comment="Refacto to add modulo to matrix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Matrix/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/Matrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Matrix/MatrixTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/MatrixTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Matrix/Operations/Addition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/Operations/Addition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Matrix/Operations/Multiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/Operations/Multiplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Matrix/Operations/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/Operations/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Matrix/Operations/Subtraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/Operations/Subtraction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.MainTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Labo_05_Matrices" />
@@ -109,8 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainTest.testMatrixAddition" />
         <item itemvalue="JUnit.MatrixTest.testToString" />
         <item itemvalue="JUnit.MatrixTest" />
@@ -128,7 +122,7 @@
       <workItem from="1697553479225" duration="4887000" />
       <workItem from="1697558422279" duration="5000" />
       <workItem from="1697616070142" duration="2109000" />
-      <workItem from="1697628822129" duration="932000" />
+      <workItem from="1697628822129" duration="1710000" />
     </task>
     <task id="LOCAL-00001" summary="push 1">
       <option name="closed" value="true" />
@@ -146,15 +140,35 @@
       <option name="project" value="LOCAL" />
       <updated>1697617564255</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refacto to add modulo to matrix">
+      <option name="closed" value="true" />
+      <created>1697629812743</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697629812743</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="push 1" />
     <MESSAGE value="unit tests for main" />
-    <option name="LAST_COMMIT_MESSAGE" value="unit tests for main" />
+    <MESSAGE value="Refacto to add modulo to matrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refacto to add modulo to matrix" />
   </component>
 </project>

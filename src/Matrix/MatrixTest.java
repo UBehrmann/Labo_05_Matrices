@@ -6,7 +6,7 @@
  */
 
 package Matrix;
-import Matrix.Matrix;
+
 import org.junit.Assert;
 import org.junit.Test;
 

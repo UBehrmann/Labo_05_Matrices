@@ -8,8 +8,8 @@
 package Matrix;
 
 public class Matrix {
-    private int[][] matrix;
-    private int modulo;
+    private final int[][] matrix;
+    private final int modulo;
 
     // Constructor
     public Matrix(int height, int width, int modulo) {
@@ -17,21 +17,23 @@ public class Matrix {
         this.modulo = modulo;
 
         java.util.Random random = new java.util.Random();
-        for(int[] i : matrix){
-            for(int j : i){
-                j = random.nextInt(modulo);
+
+        for(int[] row : matrix){
+            for(int element : row){
+                element = random.nextInt(modulo);
             }
         }
     }
 
     public Matrix(int[][] matrix, int modulo) {
         this.matrix = matrix;
-        for (int[] i : matrix){
-            for (int j : i){
-                j = Math.floorMod(j, modulo);
+        this.modulo = modulo;
+
+        for (int[] row : matrix){
+            for (int element : row){
+                element = Math.floorMod(element, modulo);
             }
         }
-        this.modulo = modulo;
     }
 
     /*
@@ -53,14 +55,14 @@ public class Matrix {
      * Render a representation of the current object in the form of a String object
      */
     public String toString() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (int[] i : matrix) {
             for (int j : i) {
-                result += j + " ";
+                result.append(j).append(" ");
             }
-            result += "\n";
+            result.append("\n");
         }
-        return result;
+        return result.toString();
     }
 
     /*
