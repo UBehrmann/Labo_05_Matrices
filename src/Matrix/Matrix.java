@@ -6,6 +6,7 @@
  */
 
 package Matrix;
+import java.util.Random;
 
 public class Matrix {
     private final int[][] matrix;
@@ -16,22 +17,23 @@ public class Matrix {
         this.matrix = new int[height][width];
         this.modulo = modulo;
 
-        java.util.Random random = new java.util.Random();
+        Random random = new Random();
 
-        for(int[] row : matrix){
-            for(int element : row){
-                element = random.nextInt(modulo);
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[0].length; j++) {
+                matrix[i][j] = random.nextInt(this.modulo);
             }
         }
+
     }
 
     public Matrix(int[][] matrix, int modulo) {
         this.matrix = matrix;
         this.modulo = modulo;
 
-        for (int[] row : matrix){
-            for (int element : row){
-                element = Math.floorMod(element, modulo);
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[0].length; j++) {
+                matrix[i][j] = Math.floorMod(matrix[i][j], this.modulo);
             }
         }
     }
