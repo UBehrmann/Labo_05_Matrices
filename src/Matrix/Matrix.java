@@ -24,7 +24,6 @@ public class Matrix {
                 matrix[i][j] = random.nextInt(this.modulo);
             }
         }
-
     }
 
     public Matrix(int[][] matrix, int modulo) {
