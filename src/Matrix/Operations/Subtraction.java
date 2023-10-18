@@ -1,8 +1,8 @@
 package Matrix.Operations;
 
-public class Addition extends Operation {
+public class Subtraction extends Operation {
 
     int operation(int a, int b){
-        return a + b;
+        return a - b;
     }
 }

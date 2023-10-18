@@ -62,6 +62,9 @@ public class Matrix {
     }
 
     public int getMatrixAt(int row, int column) {
+        if(row >= matrix.length || column >= matrix[0].length){
+            return 0;
+        }
         return matrix[row][column];
     }
 

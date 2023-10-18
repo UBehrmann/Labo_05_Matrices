@@ -13,20 +13,27 @@ public abstract class Operation {
     public Matrix doOperation( Matrix a, Matrix b, int modulo) throws Exception {
 
         // Height and width of the two matrix aren't the same
-        if(a.getSizeWidth() != b.getSizeWidth() || a.getSizeHeight() != b.getSizeHeight()){
-            throw new Exception("Matrix aren't the same size.");
+        if(a == null || b == null ){
+            throw new Exception("At least one matrix is empty.");
         }
 
-        Matrix c = new Matrix(new int[a.getSizeHeight()][a.getSizeWidth()]);
+        if(modulo <= 0){
+            throw new Exception("Modulo must be greater than 0.");
+        }
 
-        for(int row = 0; row < a.getSizeHeight(); row++){
-            for (int column = 0; column < a.getSizeWidth(); column++){
-                c.setMatrixAt(row, column, op(a.getMatrixAt(row, column), b.getMatrixAt(row, column)) % modulo);
+        int cHeight = Math.max(a.getSizeHeight(), b.getSizeHeight());
+        int cWidth = Math.max(a.getSizeWidth(), b.getSizeWidth());
+
+        Matrix c = new Matrix(new int[cHeight][cWidth]);
+
+        for(int row = 0; row < cHeight; row++){
+            for (int column = 0; column < cWidth; column++){
+                c.setMatrixAt(row, column, Math.floorMod(operation(a.getMatrixAt(row, column), b.getMatrixAt(row, column)), modulo));
             }
         }
 
         return c;
     }
 
-    abstract int op(int a, int b);
+    abstract int operation(int a, int b);
 }

@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48de82a3-71cb-4f02-8312-01cba0bbe888" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rapport.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Matrix/Matrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Matrix/MatrixTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Matrix/Operations/Addition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Matrix/Operations/Operation.java" afterDir="false" />
+    <list default="true" id="48de82a3-71cb-4f02-8312-01cba0bbe888" name="Changes" comment="push 1">
+      <change afterPath="$PROJECT_DIR$/src/Matrix/Operations/Multiplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Matrix/Operations/Subtraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labo_05_Matrices.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Labo_05_Matrices.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Matrix/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Matrix/Operations/Addition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/Operations/Addition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Matrix/Operations/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix/Operations/Operation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,38 +32,57 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2WtYjNbDMbXIWFAdmWx4hR1Zn5H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Main">
+}</component>
+  <component name="RunManager" selected="JUnit.MainTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Labo_05_Matrices" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labo_05_Matrices" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.testMatrixAddition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Labo_05_Matrices" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="testMatrixAddition" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,26 +92,6 @@
       <option name="PACKAGE_NAME" value="Matrix" />
       <option name="MAIN_CLASS_NAME" value="Matrix.MatrixTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixTest.testMatrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Labo_05_Matrices" />
-      <option name="PACKAGE_NAME" value="Matrix" />
-      <option name="MAIN_CLASS_NAME" value="Matrix.MatrixTest" />
-      <option name="METHOD_NAME" value="testMatrice" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixTest.testMatriceFromArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Labo_05_Matrices" />
-      <option name="PACKAGE_NAME" value="Matrix" />
-      <option name="MAIN_CLASS_NAME" value="Matrix.MatrixTest" />
-      <option name="METHOD_NAME" value="testMatriceFromArray" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.testMatrixAddition" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MatrixTest.testToString" />
         <item itemvalue="JUnit.MatrixTest" />
-        <item itemvalue="JUnit.MatrixTest.testMatriceFromArray" />
-        <item itemvalue="JUnit.MatrixTest.testMatrice" />
       </list>
     </recent_temporary>
   </component>
@@ -128,11 +124,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697553478221</updated>
-      <workItem from="1697553479225" duration="4866000" />
+      <workItem from="1697553479225" duration="4887000" />
+      <workItem from="1697558422279" duration="5000" />
+      <workItem from="1697616070142" duration="1445000" />
     </task>
+    <task id="LOCAL-00001" summary="push 1">
+      <option name="closed" value="true" />
+      <created>1697558396216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697558396216</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="push 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="push 1" />
   </component>
 </project>
